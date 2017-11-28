@@ -1,0 +1,36 @@
+@charset "utf-8";
+@@font-face {
+  font-family: TheFontInOurStars, Times, serif;
+}
+/*palate:
+---------------
+Grey: #4f4f4f
+Tan: #e0dec4
+ochre: #7c4f31
+faded gold: #736e54
+blue: #7791a5
+---------------
+*/
+
+/*Body*/
+body {
+  background:
+}
+
+
+ /* headings and banner */
+ header {
+   font-family: OPTICather, Arial, sans-serif;
+   font-style: normal;
+   color: #4f4f4f;
+
+ }
+ h1 {
+   font-size: 4em;
+   line-height: 1;
+   letter-spacing: -2px;
+   word-spacing: 2px;
+ }
+ h2 {
+   font-size: 2em;
+ }
