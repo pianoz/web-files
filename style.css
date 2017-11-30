@@ -5,7 +5,7 @@
 /*palate:
 ---------------
 Grey: #4f4f4f
-Tan: #e0dec4
+Tan: #e2decc
 ochre: #7c4f31
 faded gold: #736e54
 blue: #7791a5
@@ -14,35 +14,91 @@ blue: #7791a5
 
 /*Body*/
 body {
-  background:
+  background-color:  #e2decc;
+
+}
+/*horizontal nav bar */
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #736e54;
+    position:relative;;
+    top:-10px;
+}
+li.nav1 {
+    float: right;
 }
 
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 50px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #7c4f31;
+}
+ul.sidenav{
+  font-family: 'Playfair Display', serif;
+  font-size: 2em;
+  font-style: light;
+  position: relative;
+  width: 200px;
+  left: 2px;
+  border-left-color: #4f4f4f;
+  border-right-color: #4f4f4f;
+  border-left-style: solid;
+  border-left-width: 15px;
+  border-right-style: solid;
+  border-right-width: 15px;
+  padding: 0em;
+  margin-top: 0.6em;
+}
+ul.sidenavico{
+  padding: 0px 0px;
+  border-width: thin;
+}
+ul.sidenavico:hover{
+  background-color: #7791a5;
+}
 
  /* headings and banner */
  header {
    font-family: 'Playfair Display', serif;
    font-style: normal;
    color: #4f4f4f;
-
  }
+
+
  h1 {
    font-size: 8em;
    line-height: 1;
    letter-spacing: -2px;
    word-spacing: 2px;
-   margin-bottom: .2em;
+   margin-bottom: 0em;
    position: relative;
    left:10px;
    margin-top: 0em
  }
- hr {
+ hr.big {
    border-style: solid;
    border-color: #4f4f4f;
    border-width: 8px;
-   margin-top: .6em;
+   margin-top: 1em;
    margin-left: auto;
    margin-right: auto;
    margin-bottom: 10px;
+ }
+ hr.cleanblue{
+   border-style: solid;
+   border-color: #7791a5;
+   border-width: 3px;
+   margin-left: 0px;
+   left: 150px;
  }
  topbar {
    border-top: solid;
@@ -53,6 +109,31 @@ body {
    margin-left: auto;
    margin-right: inherit;
    height:50px;
+ }
+/*body*/
+p.about{
+  font-family: "Playfair Display", serif;
+  font-size: 1.7em;
+  text-indent: 50px;
+  word-wrap: break-word;
+}
+p.contact{
+  font-family: "Playfair Display", serif;
+  font-size: 1.7em;
+  text-align: center;
+  text-indent: 50px;
+  word-wrap: break-word;
+}
+
+ /* icons for github and social media.*/
+ g.smico{
+   position: absolute;
+   right: 4px;
+   top: 4px;
+ }
+ ul.smico{
+   margin-top: 2px;
+   margin-bottom: 2px;
  }
  giticonav{
    position: absolute;
