@@ -1,5 +1,5 @@
 @charset "utf-8";
-@@font-face {
+@font-face {
   font-family: TheFontInOurStars, Times, serif;
 }
 /*palate:
@@ -20,17 +20,52 @@ body {
 
  /* headings and banner */
  header {
-   font-family: OPTICather, Arial, sans-serif;
+   font-family: 'Playfair Display', serif;
    font-style: normal;
    color: #4f4f4f;
 
  }
  h1 {
-   font-size: 4em;
+   font-size: 8em;
    line-height: 1;
    letter-spacing: -2px;
    word-spacing: 2px;
+   margin-bottom: .2em;
+   position: relative;
+   left:10px;
+   margin-top: 0em
  }
- h2 {
-   font-size: 2em;
+ hr {
+   border-style: solid;
+   border-color: #4f4f4f;
+   border-width: 8px;
+   margin-top: .6em;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 10px;
+ }
+ topbar {
+   border-top: solid;
+   border-color: #7c4f31;
+ }
+ navbar{
+   background: #7c4f31;
+   margin-left: auto;
+   margin-right: inherit;
+   height:50px;
+ }
+ giticonav{
+   position: absolute;
+   right: 10px;
+   top: 10px;
+ }
+ nficonav{
+   position: absolute;
+   right: 42px;
+   top: 8px;
+ }
+ yticonav{
+   position: absolute;
+   right: 82px;
+   top: 10px;
  }
