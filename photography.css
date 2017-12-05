@@ -1,0 +1,17 @@
+
+body{
+  font-family: 'Playfair Display', serif;
+  background-image: url('bgsh/6.jpg');
+  background-position: center;
+
+}
+hr.headline{
+  color: black;
+}
+div .photoenvelope{
+  left: 50%;
+  right: 50%;
+  width: 80%;
+  color: black;
+
+}
