@@ -2,16 +2,25 @@
 body{
   font-family: 'Playfair Display', serif;
   background-image: url('bgsh/6.jpg');
-  background-position: center;
+  background-position: top center;
 
 }
 hr.headline{
   color: black;
 }
-div .photoenvelope{
-  left: 50%;
-  right: 50%;
+.phototitle{
+  font-style:italic;
+  position: absolute;
+  left: 20%;
+  top: 7%;
   width: 80%;
-  color: black;
-
+  background-color: black;
+  color: white;
+}
+.photoenv{
+  position: relative;
+  left: 50%;
+  width: 80%;
+  top: 10%;
+  background-color: black;
 }
