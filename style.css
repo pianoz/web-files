@@ -115,7 +115,6 @@ div h3:hover{
   width: 50px;
 }
 .vertical-text{
-  visibility: hidden;
   font-family: 'Playfair Display', serif;
   font-style: italic;
   position: absolute;
@@ -124,10 +123,12 @@ div h3:hover{
   width: 100%;
   color: white;
   transform: rotate(90deg);
+  padding-bottom: 0;
+  transition: .7s ease-out;
   text-align: center;
+  opacity: 0;
 }
 .vertical-reverse{
-  visibility: hidden;
   font-family: 'Playfair Display', serif;
   font-style: italic;
   position: absolute;
@@ -137,7 +138,10 @@ div h3:hover{
   width: 100%;
   color: white;
   transform: rotate(270deg);
+  padding-bottom: 0;
+  transition: .7s ease-out;
   text-align: center;
+  opacity: 0;
 }
 .inner {
   position: absolute;
@@ -150,6 +154,8 @@ div h3:hover{
 .outer__wrap:hover .vertical-text,
 .outer__wrap:hover .vertical-reverse{
   visibility: visible;
+  padding-bottom: 20px;
+  opacity: 1;
 }
 
 .outer1 {
