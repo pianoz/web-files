@@ -1,0 +1,65 @@
+div h3 {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 3em;
+    padding: 0;
+}
+body{
+  font-family: 'Playfair Display', serif;
+  background-image: url(bgsh/7.jpg);
+  background-position: top center;
+}
+div p{
+  font-family: 'Playfair Display', serif;
+  text-indent: 65px;
+  font-size: 1.5em;
+  line-height: 150%;
+  width:100%;
+  text-align: left;
+}
+.txtbox{
+  margin: auto;
+  width: 600px;
+  padding: 10px;
+  top: 410px;
+}
+div hr{
+  display: block;
+  color: white;
+  width: 600px;
+  border-top: 1px solid #ccc;
+}
+.backbutton{
+  width:100px;
+  height:100px;
+  position: absolute;
+  top: 0px;
+  left: 110px;
+  color:white;
+  font-weight: bold;
+  font-size:3em;
+}
+a{
+  color: white;
+  text-decoration:none;
+  text-decoration-color: none;
+}
+.ico{
+  width:50px;
+  position: relative;
+  margin-top: 25px;
+  margin-left: 50px;
+  margin-right:50px;
+}
+
+div {
+    z-index: 1000;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    opacity: 1;
+    color: white;
+    transform: translateX(-50%) translateY(-50%);
+}
