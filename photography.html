@@ -17,7 +17,7 @@
           url: 'photos/ChataquaSnow1.jpg'
         },
       ];
-      function loadImage(diff) {
+      function changePhotoNumberBy(diff) {
         photoNumber += diff;
         if(photoNumber == -1) photoNumber = photoData.length - 1;
         if(photoNumber == photoData.length) photoNumber = 0;
@@ -29,18 +29,18 @@
       document.querySelector('#back').addEventListener('click', e => {
         e.preventDefault();
 
-        loadImage(-1);
+        changePhotoNumberBy(-1);
 
         return false;
       });
       document.querySelector('#next').addEventListener('click', e => {
         e.preventDefault();
 
-        loadImage(1);
+        changePhotoNumberBy(1);
 
         return false;
       });
-      loadImage(0);
+      changePhotoNumberBy(0);
     });
   </script>
 </head>
