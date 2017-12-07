@@ -2,39 +2,55 @@
 <html>
 <link rel="stylesheet" type="text/css" href="photography.css">
 <head>
+  <script>
+    window.addEventListener('load', () => {
+      var photoNumber = 0;
+      var photoData = [
+        {
+          title: 'My Awesome Image',
+          description: 'its title is My Awesome Image',
+          url: 'photos/ChataquaSnow1.jpg'
+        },
+        {
+          title: 'My Awesome Image Again',
+          description: 'its title is My Awesome Image Again',
+          url: 'photos/ChataquaSnow1.jpg'
+        },
+      ];
+      function loadImage(diff) {
+        photoNumber += diff;
+        if(photoNumber == -1) photoNumber = photoData.length - 1;
+        if(photoNumber == photoData.length) photoNumber = 0;
+        var photo = photoData[photoNumber];
+        
+        document.querySelector('#phototitle').textContent = photo.title;
+        document.querySelector('#photoenv').src = photo.url;
+      }
+      document.querySelector('#back').addEventListener('click', e => {
+        e.preventDefault();
 
+        loadImage(-1);
+
+        return false;
+      });
+      document.querySelector('#next').addEventListener('click', e => {
+        e.preventDefault();
+
+        loadImage(1);
+
+        return false;
+      });
+      loadImage(0);
+    });
+  </script>
 </head>
 <body>
   <div class="icoback"> <a href="index.html"> &larr;</a></div>
-  <div class="phototitle">Phototitle here</div>
-  <div class="photoenv"><img src='photos/0.jpg' id="photo">
+  <div class="phototitle" id="phototitle">Phototitle here</div>
+  <div class="photoenv"><img id="photoenv" />
   </div>
   <div class="navenv">
     <div class="iconav"><a href="#" id="back">&larr;</a>&nbsp;&nbsp;<a href="#" id="next">&rarr;</a></div>
-    <script>
-    var imageNumber = 0;
-      window.addEventListener('load', () => {
-        var photo = document.querySelector('#photo');
-        document.querySelector('#back').addEventListener('click', e => {
-          e.preventDefault();
-
-          imageNumber--;
-          photo.src = `photos/${imageNumber}.jpg`;
-          alert(photo.src);
-
-          return false;
-        });
-        document.querySelector('#next').addEventListener('click', e => {
-          e.preventDefault();
-
-          imageNumber++;
-          photo.src = `photos/${imageNumber}.jpg`;
-          alert(photo.src);
-
-          return false;
-        });
-      });
-    </script>
   </div>
 
 </body>
