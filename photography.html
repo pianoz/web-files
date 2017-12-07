@@ -7,10 +7,35 @@
 <body>
   <div class="icoback"> <a href="index.html"> &larr;</a></div>
   <div class="phototitle">Phototitle here</div>
-  <div class="photoenv"><img src='photos/flatironSnow.jpg'>
+  <div class="photoenv"><img src='photos/0.jpg' id="photo">
   </div>
   <div class="navenv">
-    <div class="iconav"><a href="">&larr;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">&rarr;</a></div>
+    <div class="iconav"><a href="#" id="back">&larr;</a>&nbsp;&nbsp;<a href="#" id="next">&rarr;</a></div>
+    <script>
+    var imageNumber = 0;
+      window.addEventListener('load', () => {
+        var photo = document.querySelector('#photo');
+        document.querySelector('#back').addEventListener('click', e => {
+          e.preventDefault();
+
+          imageNumber--;
+          photo.src = `photos/${imageNumber}.jpg`;
+          alert(photo.src);
+
+          return false;
+        });
+        document.querySelector('#next').addEventListener('click', e => {
+          e.preventDefault();
+
+          imageNumber++;
+          photo.src = `photos/${imageNumber}.jpg`;
+          alert(photo.src);
+
+          return false;
+        });
+      });
+    </script>
   </div>
+
 </body>
 </html>
