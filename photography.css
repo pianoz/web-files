@@ -36,6 +36,7 @@ hr.headline{
   top: 16%;
   bottom: 16%;
   text-align: center;
+  overflow: hidden;
 }
 .iconav{
   font-size: 1.7em;
@@ -53,13 +54,10 @@ hr.headline{
 }
 #photoenv {
     width: 80%;
-    max-height: 100%;
-    display: inline-block;
 }
 .photodescripcontainer{
     float: right;
     width: 18%;
-    display: inline-block;
     text-align: right;
 }
 #photodescrip{
