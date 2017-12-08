@@ -258,5 +258,22 @@ window.addEventListener('load', () => {
 
     return false;
   });
+  window.addEventListener('keyup', e => {
+    switch(e.key) {
+      case 'ArrowLeft': {
+        e.preventDefault();
+        changePhotoNumberBy(-1);
+        return false;
+      }
+      case 'ArrowRight': {
+        e.preventDefault();
+        changePhotoNumberBy(1);
+        return false;
+      }
+      default: {
+        return true;
+      }
+    }
+  });
   changePhotoNumberBy(0);
 });
