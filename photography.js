@@ -67,67 +67,62 @@ window.addEventListener('load', () => {
       url: 'photos/CrestoneAscent.jpg'
     },
     {
-      title: 'Flower at the Denver Botanical Gardens',
+      title: 'Crestone Campfire',
       description: 'not here yet',
       url: 'photos/CrestoneCampfire.jpg'
     },
     {
-      title: 'Flower at the Denver Botanical Gardens',
-      description: 'not here yet',
-      url: 'photos/BotanicalGdnFlower.jpg'
-    },
-    {
-      title: 'Flower at the Denver Botanical Gardens',
+      title: '-Summit, -Keyhole',
       description: 'not here yet',
       url: 'photos/LongsRoute.jpg'
     },
     {
-      title: 'Flower at the Denver Botanical Gardens',
+      title: 'Mt. Cameron Early Morning',
       description: 'not here yet',
       url: 'photos/MtCameron.jpg'
     },
     {
-      title: 'Flower at the Denver Botanical Gardens',
+      title: 'On Belay',
       description: 'not here yet',
       url: 'photos/NickBelay.jpg'
     },
     {
-      title: 'Flower at the Denver Botanical Gardens',
+      title: 'Too Cold for Some',
       description: 'not here yet',
       url: 'photos/QuandarySummit.jpg'
     },
     {
-      title: 'Flower at the Denver Botanical Gardens',
+      title: 'Red Rocks',
       description: 'not here yet',
       url: 'photos/RedRocks.jpg'
     },
     {
-      title: 'Flower at the Denver Botanical Gardens',
+      title: 'Flatirons Through the Royal Arch',
       description: 'not here yet',
       url: 'photos/RoyalArch.jpg'
     },
     {
-      title: 'Flower at the Denver Botanical Gardens',
+      title: 'On Rappel',
       description: 'not here yet',
       url: 'photos/SamRappel.jpg'
     },
     {
-      title: 'Flower at the Denver Botanical Gardens',
+      title: 'Green Ridge',
       description: 'not here yet',
       url: 'photos/SneffelsAscent.jpg'
     },
     {
-      title: 'Flower at the Denver Botanical Gardens',
+      title: 'Lake Ridge',
       description: 'not here yet',
       url: 'photos/SneffelsRidge.jpg'
     },
     {
-      title: 'Flower at the Denver Botanical Gardens',
+      title: 'Wild Home',
       description: 'not here yet',
       url: 'photos/SneffelsTent.jpg'
     },
     {
-      title: 'Flower at the Denver Botanical Gardens',
+      title: 'The Jam',
       description: 'not here yet',
       url: 'photos/TheJam.jpg'
     },
