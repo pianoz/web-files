@@ -29,7 +29,7 @@ hr.headline{
   color: white;
   text-align: right;
 }
-.photoenv{
+.photoenvcontainer{
   position: absolute;
   left:  10%;
   width: 80%;
@@ -51,10 +51,23 @@ hr.headline{
   height: 100;
   width: 100;
 }
-img {
-    max-width: 100%;
+#photoenv {
+    width: 80%;
     max-height: 100%;
-
+    display: inline-block;
+}
+.photodescripcontainer{
+    float: right;
+    width: 18%;
+    display: inline-block;
+    text-align: right;
+}
+#photodescrip{
+    color: white;
+    font-family: monospace;
+    font-size: 1.1em;
+    box-shadow: 5px 0 0 black, -5px 0 0 black; /* basically padding https://css-tricks.com/multi-line-padded-text/ */
+    background: black;
 }
 a {
   text-decoration: none;

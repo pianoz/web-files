@@ -3,7 +3,7 @@ window.addEventListener('load', () => {
   var photoData = [
     {
       title: 'Flatirons in the Snow',
-      description: 'date, 12/3/2 /n F-stop 1.8. /n 50 mm /n film type /n some words no more than a sentance. ',
+      description: 'date, 12/3/2 \n F-stop 1.8. \n 50 mm \n film type \n some words no more than a sentance. ',
       url: 'photos/FlatironSnow.jpg'
     },
     {
@@ -139,6 +139,8 @@ window.addEventListener('load', () => {
     var photo = photoData[photoNumber];
 
     document.querySelector('#phototitle').textContent = photo.title;
+    var formattedDescription = photo.description.replace(/\s*\n\s*/g, '<br/>');
+    document.querySelector('#photodescrip').innerHTML = formattedDescription;
     document.querySelector('#photoenv').src = photo.url;
   }
   document.querySelector('#back').addEventListener('click', e => {
