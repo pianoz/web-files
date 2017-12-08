@@ -13,7 +13,7 @@ window.addEventListener('load', () => {
     },
     {
       title: 'JILA tower',
-      description: '10/2/2017 \n f/16 \n 50mm Zuiko \n 1/1000s \n Ilford 400',
+      description: '10/2/2017 \n f/16 \n 50mm Zuiko \n 1/250s \n Ilford 400',
       url: 'photos/JilaTower.jpg'
     },
     {
@@ -162,14 +162,9 @@ window.addEventListener('load', () => {
       url: 'photos/GoingDown.jpg'
     },
     {
-      title: 'Sangre De Christo Wilderness',
+      title: 'Sangre De Cristo Wilderness',
       description: '8/2017 \n f/5.6 \n 50mm Zuiko \n 1/200s \n fuji 200',
       url: 'photos/LastSign.jpg'
-    },
-    {
-      title: 'Packed',
-      description: '9/17/2017 \n f/5.6 \n 50mm Zuiko \n 1/200s \n Portra 400',
-      url: 'photos/Packed.jpg'
     },
     {
       title: 'Another Cool Sunset',

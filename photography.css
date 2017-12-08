@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto+Mono');
+
 body{
   font-family: 'Roboto Mono', serif;
   background-image: url('bgsh/6.jpg');
@@ -6,9 +7,11 @@ body{
   background-position: top center;
 
 }
+
 hr.headline{
   color: black;
 }
+
 .phototitle{
   font-style:italic;
   font-size: 1.7em;
@@ -19,6 +22,7 @@ hr.headline{
   background-color: black;
   color: white;
 }
+
 .navenv{
   font-style:italic;
   position: absolute;
@@ -29,6 +33,7 @@ hr.headline{
   color: white;
   text-align: right;
 }
+
 .photoenvcontainer{
   position: absolute;
   left:  10%;
@@ -38,12 +43,14 @@ hr.headline{
   text-align: center;
   overflow: hidden;
 }
+
 .iconav{
   font-size: 1.7em;
   padding-right: .5em;
   color: white;
   margin-right: 0px;
 }
+
 .icoback{
   font-size:2em;
   position: absolute;
@@ -52,19 +59,22 @@ hr.headline{
   height: 100;
   width: 100;
 }
+
 a:hover{
   color: grey;
 }
+
 #photoenv {
     max-height: 100%;
     max-width: 85%;
-
 }
+
 .photodescripcontainer{
     float: right;
     width: 14%;
     text-align: right;
 }
+
 #photodescrip{
     color: white;
     font-family: monospace;
@@ -72,6 +82,7 @@ a:hover{
     box-shadow: 5px 0 0 black, -5px 0 0 black; /* basically padding https://css-tricks.com/multi-line-padded-text/ */
     background: black;
 }
+
 a {
   text-decoration: none;
   color: white;
