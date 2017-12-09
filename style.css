@@ -106,7 +106,7 @@ div h3:hover{
 .outer {
   width: 100px;
   height: 100%;
-  left: 10%;
+  margin:0;
   position: absolute;
   overflow: hidden;
 }
@@ -123,26 +123,18 @@ div h3:hover{
   top: 50%;
   width: 100%;
   color: white;
+  visibility: hidden;
+  opacity: 0;
   transform: rotate(90deg) translateY(5px);
   transition: transform .7s ease-out, opacity .7s ease-out;
   text-align: center;
-  opacity: 0;
   animation: linksReveal 1.5s ease-out 1;
 }
-.vertical-reverse{
-  font-family: 'Playfair Display', serif;
-  font-style: italic;
-  position: absolute;
-  font-size: 2em;
+.vertical-text.reverse{
   left:-27px;
   top: 37%;
-  width: 100%;
-  color: white;
   transform: rotate(270deg) translateY(5px);
-  transition: transform .7s ease-out, opacity .7s ease-out;
-  text-align: center;
-  opacity: 0;
-  animation: linksReveal-reverse 1.5s ease-out 1;
+  animation-name: linksReveal-reverse;
 }
 .inner {
   position: absolute;
@@ -152,140 +144,31 @@ div h3:hover{
   background: white;
   top: 50%;
 }
+.inner.short {
+  height: 70%;
+}
 .outer__wrap:hover .vertical-text{
+  visibility: visible;
   transform: rotate(90deg) translateY(-5px);
   opacity: 1;
 }
-.outer__wrap:hover .vertical-reverse{
+.outer__wrap:hover .vertical-text.reverse{
   transform: rotate(270deg) translateY(-5px);
-  opacity: 1;
 }
 
-.outer .vertical-text,
-.outer .vertical-reverse  {animation-delay: 0.7s;}
-.outer1 .vertical-text,
-.outer1 .vertical-reverse {animation-delay: 1.0s;}
-.outer2 .vertical-text,
-.outer2 .vertical-reverse {animation-delay: 1.3s;}
-.outer3 .vertical-text,
-.outer3 .vertical-reverse {animation-delay: 2.2s;}
-.outer4 .vertical-text,
-.outer4 .vertical-reverse {animation-delay: 1.9s;}
-.outer5 .vertical-text,
-.outer5 .vertical-reverse {animation-delay: 1.6s;}
+#outer0 .vertical-text {animation-delay: calc( 2s + (.3s * 0) );}
+#outer1 .vertical-text {animation-delay: calc( 2s + (.3s * 1) );}
+#outer2 .vertical-text {animation-delay: calc( 2s + (.3s * 2) );}
+#outer3 .vertical-text {animation-delay: calc( 2s + (.3s * 5) );}
+#outer4 .vertical-text {animation-delay: calc( 2s + (.3s * 4) );}
+#outer5 .vertical-text {animation-delay: calc( 2s + (.3s * 3) );}
 
-.outer1 {
-  width: 100px;
-  height: 100%;
-  left: 20%;
-  margin:0;
-  position: absolute;
-  overflow: hidden;
-}
-.outer__wrap1{
-  position: relative;
-  height: 50%;
-  width: 50px;
-}
-.inner1 {
-  position: absolute;
-  width:100%;
-  height: 70%;
-  width: 7px;
-  background: white;
-  top: 50%;
-}
-
-.outer2 {
-  width: 100px;
-  height: 100%;
-  left: 30%;
-  margin:0;
-  position: absolute;
-  overflow: hidden;
-}
-.outer__wrap2{
-  position: relative;
-  height: 50%;
-  width: 50px;
-}
-.inner2 {
-  position: absolute;
-  width:100%;
-  height: 100%;
-  width: 7px;
-  background: white;
-  top: 50%;
-}
-
-
-.outer3 {
-  width: 100px;
-  height: 100%;
-  left: 90%;
-  margin:0;
-  position: absolute;
-  overflow: hidden;
-}
-.outer__wrap3{
-  position: relative;
-  height: 50%;
-  width: 50px;
-}
-.inner3 {
-  position: absolute;
-  width:100%;
-  height: 100%;
-  width: 7px;
-  background: white;
-  top: 50%;
-}
-
-
-.outer4 {
-  width: 100px;
-  height: 100%;
-  left: 80%;
-  margin:0;
-  position: absolute;
-  overflow: hidden;
-}
-.outer__wrap4{
-  position: relative;
-  height: 50%;
-  width: 50px;
-}
-.inner4 {
-  position: absolute;
-  width:100%;
-  height: 70%;
-  width: 7px;
-  background: white;
-  top: 50%;
-}
-
-
-.outer5 {
-  width: 100px;
-  height: 100%;
-  left: 70%;
-  margin:0;
-  position: absolute;
-  overflow: hidden;
-}
-.outer__wrap5{
-  position: relative;
-  height: 50%;
-  width: 50px;
-}
-.inner5 {
-  position: absolute;
-  width:100%;
-  height: 100%;
-  width: 7px;
-  background: white;
-  top: 50%;
-}
+#outer0 {left: 10%;}
+#outer1 {left: 20%;}
+#outer2 {left: 30%;}
+#outer3 {left: 90%;}
+#outer4 {left: 80%;}
+#outer5 {left: 70%;}
 
 
 /*animations*/
@@ -306,6 +189,7 @@ div h3:hover{
 }
 @keyframes linksReveal {
   0% {
+    visibility: visible;
     transform: rotate(90deg) translateY(5px);
     opacity: 0;
   }
@@ -320,6 +204,7 @@ div h3:hover{
 }
 @keyframes linksReveal-reverse {
   0% {
+    visibility: visible;
     transform: rotate(270deg) translateY(5px);
     opacity: 0;
   }
